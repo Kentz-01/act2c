@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author CL3-PC27
  */
-public class aug4 extends javax.swing.JFrame {
+public class Cafeteria extends javax.swing.JFrame {
 
     /**
      * Creates new form aug4
      */
-    public aug4() {
+    public Cafeteria() {
         initComponents();
     }
 
@@ -105,6 +105,7 @@ public class aug4 extends javax.swing.JFrame {
         
         int choose = Integer.parseInt(opt1.getText());
         int hot = 10;
+        int sio = 7;
         if(choose == 1)
         {
         JOptionPane.showMessageDialog(rootPane, "YOU CHOOSE HOTDOG", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
@@ -113,24 +114,66 @@ public class aug4 extends javax.swing.JFrame {
         
         opt1.enable(false);
         }
+        else if (choose == 2)
+        {
+        JOptionPane.showMessageDialog(rootPane, "YOU CHOOSE SIOPAO", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        jTextField3.setText("SIOPAO");
+        jTextField5.setText("7 Pesos");
+        opt1.enable(false);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        int choose = Integer.parseInt(opt1.getText());
         int hot = 10;
+        int sio = 7;
         int quantity = Integer.parseInt(txtquan.getText());
         int quan1 = quantity * hot;
+        int quan2 = quantity * sio;
+        
+        if (choose == 1)
+        {
         JOptionPane.showMessageDialog(rootPane, "the total is: " + quan1, "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if (choose == 2)
+        {
+        JOptionPane.showMessageDialog(rootPane, "the total is:" + quan2, "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        int choose = Integer.parseInt(opt1.getText());
         int cash = Integer.parseInt(csh.getText());
         int hot = 10;
+        int sio = 7;
         int quantity = Integer.parseInt(txtquan.getText());
+        
         int quan1 = quantity * hot;
-        int change = cash - quan1;
-        JOptionPane.showMessageDialog(rootPane, "the total is: " + change, "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        int quan2 = quantity * sio;
+        
+        int change1 = cash - quan1;
+        int change2 = cash - quan2;
+        
+        if (choose == 1)
+        {
+        JOptionPane.showMessageDialog(rootPane, "the change is: " + change1, "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        int choice = JOptionPane.showConfirmDialog(rootPane, "Do You Want To Exit?", "CAFETERIA", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            if (choice == JOptionPane.YES_OPTION)
+            {
+            dispose();
+            }
+        }
+        else if(choose == 2)
+        {
+        JOptionPane.showMessageDialog(rootPane, "the change is: " + change2, "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        int choice = JOptionPane.showConfirmDialog(rootPane, "Do You Want To Exit?", "CAFETERIA", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            if (choice == JOptionPane.YES_OPTION)
+            {
+            dispose();
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -150,20 +193,21 @@ public class aug4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(aug4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cafeteria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(aug4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cafeteria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(aug4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cafeteria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(aug4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Cafeteria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new aug4().setVisible(true);
+                new Cafeteria().setVisible(true);
             }
         });
     }

@@ -49,6 +49,12 @@ public class Addition extends javax.swing.JFrame {
 
         jLabel2.setName(""); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 130, 20));
+
+        txtnum1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnum1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 190, -1));
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 190, -1));
 
@@ -61,7 +67,13 @@ public class Addition extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 130, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 130, -1));
+
+        txtresult1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtresult1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtresult1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 130, -1));
 
         jButton3.setText("Addition");
@@ -140,6 +152,14 @@ public class Addition extends javax.swing.JFrame {
         this.dispose();
         new Division().show(true);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void txtnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnum1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnum1ActionPerformed
+
+    private void txtresult1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtresult1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtresult1ActionPerformed
 
     /**
      * @param args the command line arguments
