@@ -132,13 +132,13 @@ public class Addition extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new NewJFrame3().show(true);
+        new Multiplication().show(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new NewJFrame4().show(true);
+        new Division().show(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
