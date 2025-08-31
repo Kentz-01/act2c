@@ -27,26 +27,28 @@ public class Multiplication extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblresult = new javax.swing.JLabel();
         txtnum1 = new javax.swing.JTextField();
         txtnum2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        txtresult1 = new javax.swing.JTextField();
+        txtresult = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Number 1");
+        jLabel1.setText("Number 2");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
 
-        jLabel2.setName(""); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 130, 20));
+        lblresult.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblresult.setName(""); // NOI18N
+        getContentPane().add(lblresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 130, 20));
         getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 190, -1));
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 190, -1));
 
@@ -60,7 +62,11 @@ public class Multiplication extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 130, -1));
-        getContentPane().add(txtresult1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 130, -1));
+
+        txtresult.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtresult.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtresult.setEnabled(false);
+        getContentPane().add(txtresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 130, -1));
 
         jButton3.setText("Multiplication");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +108,14 @@ public class Multiplication extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 110, 90));
 
+        jButton1.setText("⟲");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -112,7 +126,12 @@ public class Multiplication extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        int num1 = Integer.parseInt(txtnum1.getText());
+        int num2 = Integer.parseInt(txtnum2.getText());
+        int multi = num1 * num2;
+        
+        txtresult.setText(String.valueOf(multi));
+        lblresult.setText(String.valueOf(multi));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -138,6 +157,14 @@ public class Multiplication extends javax.swing.JFrame {
         this.dispose();
         new Division().show(true);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        txtnum1.setText("");
+        txtnum2.setText("");
+        txtresult.setText("");
+        lblresult.setText("");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,6 +203,7 @@ public class Multiplication extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -183,10 +211,10 @@ public class Multiplication extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblresult;
     private javax.swing.JTextField txtnum1;
     private javax.swing.JTextField txtnum2;
-    private javax.swing.JTextField txtresult1;
+    private javax.swing.JTextField txtresult;
     // End of variables declaration//GEN-END:variables
 }
