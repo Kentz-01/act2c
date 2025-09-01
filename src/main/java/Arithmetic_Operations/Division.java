@@ -36,11 +36,11 @@ public class Division extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         txtresult = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -51,14 +51,14 @@ public class Division extends javax.swing.JFrame {
         lblresult.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblresult.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblresult.setName(""); // NOI18N
-        getContentPane().add(lblresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 130, 20));
+        getContentPane().add(lblresult, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 190, 20));
         getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 190, -1));
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 190, -1));
 
         jLabel3.setText("Number 1");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
-        jButton2.setText("GO TO");
+        jButton2.setText("GO BACK");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -79,38 +79,6 @@ public class Division extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton8.setText("Addition");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 110, 90));
-
-        jButton9.setText("Subtraction");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 110, 90));
-
-        jButton4.setText("Multiplication");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 110, 90));
-
-        jButton5.setText("Division");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 110, 90));
-
         jButton1.setText("⟲");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +86,46 @@ public class Division extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, -1, -1));
+
+        jButton8.setBackground(new java.awt.Color(51, 153, 0));
+        jButton8.setForeground(new java.awt.Color(0, 0, 0));
+        jButton8.setText("Addition");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 110, 40));
+
+        jButton9.setBackground(new java.awt.Color(255, 102, 0));
+        jButton9.setForeground(new java.awt.Color(0, 0, 0));
+        jButton9.setText("Subtraction");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 110, 40));
+
+        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setText("Multiplication");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 110, 40));
+
+        jButton5.setBackground(new java.awt.Color(102, 0, 102));
+        jButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jButton5.setText("Division");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 110, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -148,6 +156,14 @@ public class Division extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        txtnum1.setText("");
+        txtnum2.setText("");
+        txtresult.setText("");
+        lblresult.setText("");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         this.dispose();
@@ -171,14 +187,6 @@ public class Division extends javax.swing.JFrame {
         this.dispose();
         new Division().show(true);
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        txtnum1.setText("");
-        txtnum2.setText("");
-        txtresult.setText("");
-        lblresult.setText("");
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

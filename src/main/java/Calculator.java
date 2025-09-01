@@ -57,6 +57,7 @@ public class Calculator extends javax.swing.JFrame {
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
+        btnNavigation = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,6 +65,7 @@ public class Calculator extends javax.swing.JFrame {
         jButton1.setText("⌫");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 70, 40));
 
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton2.setText("Mv");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 50, 20));
 
@@ -159,26 +161,39 @@ public class Calculator extends javax.swing.JFrame {
         getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, 70, 40));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 310, 110));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Standard");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         jButton25.setText("%");
         getContentPane().add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 70, 40));
 
+        jButton26.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton26.setText("MC");
         getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 50, 20));
 
+        jButton27.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton27.setText("MR");
         getContentPane().add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 50, 20));
 
+        jButton28.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton28.setText("M+");
         getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 50, 20));
 
+        jButton29.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton29.setText("M-");
         getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 50, 20));
 
+        jButton30.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         jButton30.setText("MS");
         getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 50, 20));
+
+        btnNavigation.setBackground(new java.awt.Color(30, 30, 30));
+        btnNavigation.setText("☰");
+        btnNavigation.setBorder(null);
+        btnNavigation.setBorderPainted(false);
+        getContentPane().add(btnNavigation, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, 10));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -240,6 +255,7 @@ public class Calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNavigation;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
