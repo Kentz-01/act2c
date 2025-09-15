@@ -41,6 +41,12 @@ public class VerifyVoter extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
+
+        txtage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtageActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtage, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 190, 30));
 
         pack();
@@ -62,6 +68,10 @@ public class VerifyVoter extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Invalid Input", "Voting", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtageActionPerformed
 
     /**
      * @param args the command line arguments

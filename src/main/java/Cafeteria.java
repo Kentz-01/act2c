@@ -63,6 +63,12 @@ public class Cafeteria extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 90, -1));
+
+        opt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                opt1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(opt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 90, -1));
 
         jTextField3.setEnabled(false);
@@ -175,6 +181,10 @@ public class Cafeteria extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void opt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opt1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_opt1ActionPerformed
 
     /**
      * @param args the command line arguments
