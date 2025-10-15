@@ -44,8 +44,8 @@ public class MainPage extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 110, 90));
 
-        jButton3.setBackground(new java.awt.Color(255, 102, 0));
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setBackground(new java.awt.Color(0, 0, 255));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Subtraction");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,7 +54,7 @@ public class MainPage extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 110, 90));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setBackground(new java.awt.Color(51, 153, 0));
         jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("Multiplication");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -64,8 +64,8 @@ public class MainPage extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 110, 90));
 
-        jButton5.setBackground(new java.awt.Color(102, 0, 102));
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jButton5.setBackground(new java.awt.Color(0, 0, 255));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Division");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -35,7 +35,7 @@ public class Multiplication extends javax.swing.JFrame {
         txtresult = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -84,18 +84,18 @@ public class Multiplication extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
 
-        jButton12.setBackground(new java.awt.Color(51, 153, 0));
-        jButton12.setForeground(new java.awt.Color(0, 0, 0));
-        jButton12.setText("Addition");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        jButton8.setBackground(new java.awt.Color(51, 153, 0));
+        jButton8.setForeground(new java.awt.Color(0, 0, 0));
+        jButton8.setText("Addition");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 110, 40));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 110, 40));
 
-        jButton9.setBackground(new java.awt.Color(255, 102, 0));
-        jButton9.setForeground(new java.awt.Color(0, 0, 0));
+        jButton9.setBackground(new java.awt.Color(0, 0, 255));
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Subtraction");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +104,7 @@ public class Multiplication extends javax.swing.JFrame {
         });
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 110, 40));
 
-        jButton4.setBackground(new java.awt.Color(0, 0, 255));
+        jButton4.setBackground(new java.awt.Color(51, 153, 0));
         jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("Multiplication");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -114,8 +114,8 @@ public class Multiplication extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 110, 40));
 
-        jButton5.setBackground(new java.awt.Color(102, 0, 102));
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
+        jButton5.setBackground(new java.awt.Color(0, 0, 255));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Division");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,11 +150,11 @@ public class Multiplication extends javax.swing.JFrame {
         lblresult.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new Addition().show(true);
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
@@ -212,9 +212,6 @@ public class Multiplication extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
